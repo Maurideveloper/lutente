@@ -30,33 +30,36 @@
     </header>
 
     <section class="sectionForm">
-        <form action="https://formsubmit.co/5364780814bf3c6897f2f07aeeb7a89c " method="POST">
+        <form action="https://formsubmit.co/5364780814bf3c6897f2f07aeeb7a89c " method="POST" class="form">
 
         <ul>
-              <li>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" />
+              <li class="listaForm">
+                <label for="name"><img src="../img/usuario.png" alt="" class="iconForm"></label>
+                <input type="text" id="name" name="name" placeholder="Nombre" class="inputForm" required/>
               </li>
-              <li>
-                <label for="lastname">Apellido:</label>
-                <input type="text" id="lastname" name="lastname" />
+              <li class="listaForm">
+                <label for="lastname"><img src="../img/apellido.png" alt="" class="iconForm"></label>
+                <input type="text" id="lastname" name="lastname" placeholder="Apellido" class="inputForm" required/>
               </li>
-              <li>
-                <label for="company">Empresa:</label>
-                <input type="text" id="company" name="company" />
+              <li class="listaForm">
+                <label for="company"><img src="../img/maletin.png" alt="" class="iconForm"></label>
+                <input type="text" id="company" name="company" placeholder="Empresa" class="inputForm" required/>
               </li>
-              <li>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" name="email" />
+              <li class="listaForm">
+                <label for="number"><img src="../img/telefono-inteligente.png" alt="" class="iconForm"></label>
+                <input type="text" id="number" name="number" placeholder="Numero (opcional)" class="inputForm"/>
               </li>
-              <li>
-                <label for="comments">Mensaje:</label>
-                <textarea id="comments" name="comments"></textarea>
+              <li class="listaForm">
+                <label for="mail"><img src="../img/correo-electronico.png" alt="" class="iconForm"></label>
+                <input type="email" name="email" placeholder="Email" class="inputForm" required/>
+              </li>
+              <li class="listaForm">
+                <label for="comments"><img src="../img/mensaje.png" alt="" class="iconForm"></label>
+                <textarea id="comments" name="comments" placeholder="Comentario (opcional)" class="inputForm"></textarea>
               </li>
             </ul>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="buttonForm">
           </form>
     </section>
-
 </body>
 </html>
