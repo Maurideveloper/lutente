@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="/js/logicCarrousel.js"></script>
+    <script defer src="/js/script.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body id="lutenteBody">
+    <!-- Header -->
+    <!--MenuLat -->
+
+    <header class="main-header">
+        <div class="contLogoLat">
+            <!-- <img src="img/ElementosParaWeb1.jpg" alt=""> -->
+            <!-- Imagen blanco en caso de que quiera el background en blanco -->
+            <a href="#lutenteBody"><img src="img/LutenteOscuro.png" alt=""></a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navigation">
+                <li><a href="#tituloModulo">Modulos</a></li>
+                <li><a href="#tituloVentas">Proceso de venta</a></li>
+                <li><a href="#tituloBeneficios">Beneficios</a></li>
+                <li><a href="#comienzaAhora">¡Comienza ahora!</a></li>
+            </ul>
+        </nav>
+
+        <div class="ingresoApp">
+            <a href="./pages/formulario.html">Registrarse</a>
+            <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Presentacion -->
+        <section>
+
+            <!-- Img principal-->
+            <div class="contImgPresentacion">
+                <img class="imgPresentacion" src="./img/ElementosParaWeb1.jpg" alt="">
+            </div>
+            <!-- Arrow para bajar -->
+            <div class="contArrow">
+                <a href="#comienzaAhora" id="comienzaAhora">
+                    <i class="arrow down"> </i>
+                </a>
+            </div>
+
+            <!-- Contenedor de img Main -->
+            <div class="contLutenteCloud">
+                <div class="contLutenteCloudImg">
+                    <img class="imgLutenteCloud" src="/img/sectionInicioPrueba.png" id="imgMain1" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquid omnis doloremque, quos
+                        corrupti eaque officia illum aut animi obcaecati dolore laborum eligendi sint sit molestias esse
+                        optio quae! Obcaecati.</p>
+                    <a href="./pages/formulario.html">
+                        <button class="buttonComienzaAhora">¡Solicita DEMO!</button>
+                    </a>
+                </div>
+                <img class="imgDevice" src="img/DispositivosEjemplos.png" alt="">
+            </div>
+
+        </section>
+
+
+        <!-- Sector Modulos -->
+        <section class="sectionModulos">
+            <!-- Titulo -->
+            <div class="espacioParaHref" id="tituloModulo"></div>
+            <div class="contTituloSection">
+                <h2 class="tituloSection">Modulos</h2>
+            </div>
+
+            <!-- Contenedor Modulos-->
+            <div class="cont_Modulos">
+                <div class="cont_Modulos_Elegir">
+                    <!-- Imagen modulos -->
+                    <img class="imgModulos" src="/img/Imagen5SinNumPNG.png" alt="">
+                    <!-- Botones -->
+                    <div class="cont_Modulos_Botones">
+                        <button class="cont_Modulos_Boton" id="bton1">1</button>
+                        <button class="cont_Modulos_Boton" id="bton2">2</button>
+                        <button class="cont_Modulos_Boton" id="bton3">3</button>
+                        <button class="cont_Modulos_Boton" id="bton4">4</button>
+                        <button class="cont_Modulos_Boton" id="bton5">5</button>
+                    </div>
+                </div>
+                <div id="carpetaCarrusel" class="carrousel">
+                    <div class="img-container" id="img-container">
+                        <img class="imgCarrusel" id="img1" src="./img/2.png" />
+                        <img class="imgCarrusel" id="img2" src="./img/3.png" />
+                        <img class="imgCarrusel" id="img3" src="./img/4.png" />
+                        <img class="imgCarrusel" id="img4" src="./img/5.png" />
+                        <img class="imgCarrusel" id="img5" src="./img/1.png" />
+                        <!-- Arrows -->
+                        <!-- <div class="arrows">
+                            <svg class="prev" viewBox="0 0 256 512" width="100" title="angle-left">
+                                <path
+                                    d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+                            </svg>
+                            <svg class="next" viewBox="0 0 256 512" width="100" title="angle-right">
+                                <path
+                                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                            </svg>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="cont_Modulos_Mod animate__animated animate__zoomIn" id="modulo1">
+                    <h2 class="cont_Modulos_Titulo">1. Inventario</h2>
+                    <p class="cont_Modulos_Text">Inventario de vehiculo. Integracion con InfoAutos. Facil
+                        ingreso/egreso. Facil actualizacion de precios</p>
+                </div>
+
+                
+                <div class="cont_Modulos_Mod animate__animated animate__zoomIn" id="modulo2">
+                    <h2 class="cont_Modulos_Titulo">2. Ventas</h2>
+                    <p class="cont_Modulos_Text">Cierre e historial de Ventas. Creditos Prendarios. Clientes</p>
+                </div>
+
+                
+                <div class="cont_Modulos_Mod animate__animated animate__zoomIn" id="modulo3">
+                    <h2 class="cont_Modulos_Titulo">3. Administración</h2>
+                    <p class="cont_Modulos_Text">Siguiendo Post Venta. Caja. Proveedores. Transacciones/Movimientos.
+                        Asignacion de tramites. Gastos</p>
+                </div>
+
+                
+                <div class="cont_Modulos_Mod animate__animated animate__zoomIn" id="modulo4">
+                    <h2 class="cont_Modulos_Titulo">4. Gestoria</h2>
+                    <p class="cont_Modulos_Text">Tramites. Recepción. Preparación. Presentación. Administración.
+                        Seguimiento Retiro y cierre</p>
+                </div>
+
+                
+                <div class="cont_Modulos_Mod animate__animated animate__zoomIn" id="modulo5">
+                    <h2 class="cont_Modulos_Titulo">5. Analíticos</h2>
+                    <p class="cont_Modulos_Text">Dashboard. Métricas. Proyeccion de ventas. Toma de decisiones</p>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Section Proceso de venta -->
+        <section class="sectionProcesoVenta" id="tituloProcesoVentas">
+            <div class="espacioParaHref" id="tituloVentas"></div>
+            <div class="contTituloSection">
+                <h2 class="tituloSection">Procesos de ventas</h2>
+            </div>
+            <!-- Procesos de arriba -->
+            <div class="contPorcesosTotal">
+                <div class="contProcesos">
+                    <a href="#ProcesosEspacio" class="linkProceso">
+                        <div class="pruebaProcesos" id="proceso1">
+                            <p class="pPrueba">Cierre de venta</p>
+                        </div>
+                    </a>
+                    <a href="#ProcesosEspacio" class="linkProceso">
+                        <div class="pruebaProcesos" id="proceso2">
+                            <p class="pPrueba">Imputación pagos</p>
+                        </div>
+                    </a>
+                    <a href="#ProcesosEspacio" class="linkProceso">
+                        <div class="pruebaProcesos" id="proceso3">
+                            <p class="pPrueba">Asignación de trámite</p>
+                        </div>
+                    </a>
+                    <a href="#ProcesosEspacio" class="linkProceso">
+                        <div class="pruebaProcesos" id="proceso4">
+                            <p class="pPrueba">Entrega de carpeta</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Procesos de abajo -->
+                <div class="contProcesos2">
+                    <a href="#ProcesosEspacio" class="linkProceso2">
+                        <div class="pruebaProcesos2" id="proceso5">
+                            <p class="pPrueba2">Gestión de Prendas</p>
+                        </div>
+                    </a>
+                    <a href="#ProcesosEspacio" class="linkProceso2">
+                        <div class="pruebaProcesos2" id="proceso6">
+                            <p class="pPrueba2">Aprobación</p>
+                        </div>
+                    </a>
+                    <a href="#ProcesosEspacio" class="linkProceso2">
+                        <div class="pruebaProcesos2" id="proceso7">
+                            <p class="pPrueba2">Gestión de trámite</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contProcesosText">
+                <div class="espacioParaHref" id="ProcesosEspacio"></div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText1">
+                    <img class="imgProcesos" src="img/ventas.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Cierra de venta</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText2">
+                    <img class="imgProcesos" src="img/pago.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Imputación de pagos</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText3">
+                    <img class="imgProcesos" src="img/transaccion-economica.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Asignación de trámite</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText4">
+                    <img class="imgProcesos" src="img/documento.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Entrega de carpeta</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText5">
+                    <img class="imgProcesos" src="img/gestion-web.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Gestion de Prendas</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText6">
+                    <img class="imgProcesos" src="img/verificado.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Aprobación</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+                <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText7">
+                    <img class="imgProcesos" src="img/gestion-de-proyectos.png" alt="">
+
+                    <div class="ProcesoText">
+                        <h1>Gestión de trámite</h1>
+                        <p>Loreaaam ipsum dolor sit amet consectetur adipisicing elit. Excepturi sequi molestiae iusto
+                            rerum, minus repellendus assumenda, rem totam sunt, placeat voluptates reiciendis eos unde
+                            vero? Est beatae illo maiores ratione!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="sectionBeneficios">
+            <div class="espacioParaHref" id="tituloBeneficios"></div>
+            <div class="contTituloSection">
+                <h2 class="tituloSection">Beneficios</h2>
+            </div>
+            <div class="contBeneficios">
+                <ul class="listaBeneficios">
+                    <li>✔ Visibilidad y toma de desiciones</li>
+                    <li>✔ Digitalizacion y centralizacion de datos</li>
+                    <li>✔ Gestion: inventario, ventas, prendas, clientes, proveedores, tramites y gastos</li>
+                    <li>✔ Control y automatizacion de movimientos y caja</li>
+                    <li>✔ Cibtrik de flujo de efectivo, cheques y pagares</li>
+                    <li>✔ Mejor experiencia para el cliente</li>
+                </ul>
+                <img src="" alt="" class="imagenBeneficios">
+            </div>
+        </section>
+
+        <section class="sectionVideos">
+            <h2>Uso de la aplicacion</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zGAVNckbv28?si=x7zuma3OJ0wgM-RW"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    <footer class="footerLutente">
+        <div></div>
+    </footer>
+</body>
+
+</html>
