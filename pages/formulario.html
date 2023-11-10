@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body class="bodyForm">
-    <header class="main-header-form">
-        <div class="contLogoLat">
-            <!-- <img src="img/ElementosParaWeb1.jpg" alt=""> -->
-            <!-- Imagen blanco en caso de que quiera el background en blanco -->
-            <a href="../index.html"><img src="../img/LutenteOscuro.png" alt=""></a>
-        </div>
+  <header class="main-header-form">
+    <div class="contLogoLat">
+      <!-- <img src="img/ElementosParaWeb1.jpg" alt=""> -->
+      <!-- Imagen blanco en caso de que quiera el background en blanco -->
+      <a href="../index.html"><img src="../img/LutenteOscuro.png" alt=""></a>
+    </div>
 
-        <nav class="nav">
-            <ul class="navigation">
-                <li><a href="../index.html">Modulos</a></li>
-                <li><a href="../index.html">Proceso de venta</a></li>
-                <li><a href="../index.html">Beneficios</a></li>
-                <li><a href="../index.html">¡Comienza ahora!</a></li>
-            </ul>
-        </nav>
+    <nav class="nav">
+      <ul class="navigation">
+        <li><a href="../index.html">Modulos</a></li>
+        <li><a href="../index.html">Proceso de venta</a></li>
+        <li><a href="../index.html">Beneficios</a></li>
+        <li><a href="../index.html">¡Comienza ahora!</a></li>
+      </ul>
+    </nav>
 
-        <div class="ingresoApp">
-            <a href="./formulario.html">Registrarse</a>
-            <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
-        </div>
-    </header>
+    <div class="ingresoApp">
+      <a href="./formulario.html">Registrarse</a>
+      <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
+    </div>
+  </header>
 
-    <section class="sectionForm">
-        <form action="https://formsubmit.co/5364780814bf3c6897f2f07aeeb7a89c " method="POST">
+  <section class="sectionForm">
+    <form action="https://formsubmit.co/5364780814bf3c6897f2f07aeeb7a89c " method="POST" class="form">
 
-        <ul>
-              <li>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" />
-              </li>
-              <li>
-                <label for="lastname">Apellido:</label>
-                <input type="text" id="lastname" name="lastname" />
-              </li>
-              <li>
-                <label for="company">Empresa:</label>
-                <input type="text" id="company" name="company" />
-              </li>
-              <li>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" name="email" />
-              </li>
-              <li>
-                <label for="comments">Mensaje:</label>
-                <textarea id="comments" name="comments"></textarea>
-              </li>
-            </ul>
-            <input type="submit" value="Enviar">
-          </form>
-    </section>
-
+      <ul>
+        <li class="listaForm">
+          <label for="name"><img src="../img/usuario.png" alt="" class="iconForm"></label>
+          <input type="text" id="name" name="name" placeholder="Nombre" class="inputForm" required />
+        </li>
+        <li class="listaForm">
+          <label for="lastname"><img src="../img/apellido.png" alt="" class="iconForm"></label>
+          <input type="text" id="lastname" name="lastname" placeholder="Apellido" class="inputForm" required />
+        </li>
+        <li class="listaForm">
+          <label for="company"><img src="../img/maletin.png" alt="" class="iconForm"></label>
+          <input type="text" id="company" name="company" placeholder="Empresa" class="inputForm" required />
+        </li>
+        <li class="listaForm">
+          <label for="number"><img src="../img/telefono-inteligente.png" alt="" class="iconForm"></label>
+          <input type="text" id="number" name="number" placeholder="Numero (opcional)" class="inputForm" />
+        </li>
+        <li class="listaForm">
+          <label for="mail"><img src="../img/correo-electronico.png" alt="" class="iconForm"></label>
+          <input type="email" name="email" placeholder="Email" class="inputForm" required />
+        </li>
+        <li class="listaForm">
+          <label for="comments"><img src="../img/mensaje.png" alt="" class="iconForm"></label>
+          <textarea id="comments" name="comments" placeholder="Comentario (opcional)" class="inputForm"></textarea>
+        </li>
+      </ul>
+      <input type="submit" value="Enviar" class="buttonForm">
+    </form>
+  </section>
 </body>
+
 </html>
