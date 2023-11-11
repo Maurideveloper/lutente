@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="/js/logicCarrousel.js"></script>
     <script defer src="/js/script.js"></script>
 
@@ -31,6 +32,25 @@
                 <li><a href="#tituloBeneficios">Beneficios</a></li>
                 <li><a href="#comienzaAhora">¡Comienza ahora!</a></li>
             </ul>
+
+            <div class="respmenu">
+                <div class="contenedorHambur">
+                    <img id="hamburResp" src="img/menu.png" alt="">
+                    <ul id="navigationResponsive" class="navigationResponsive">
+                        <li><a href="#tituloModulo">Modulos</a></li>
+                        <li><a href="#tituloVentas">Proceso de venta</a></li>
+                        <li><a href="#tituloBeneficios">Beneficios</a></li>
+                        <li><a href="#comienzaAhora">¡Comienza ahora!</a></li>
+                    </ul>
+                </div>
+                <div class="contenedorIngreso">
+                    <img id="usuarioResp" src="img/usuarioNav.png" alt="">
+                    <div id="ingresoAppResp" class="ingresoAppResp">
+                        <a href="./pages/formulario.html">Registrarse</a>
+                        <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
+                    </div>
+                </div>
+              </div>
         </nav>
 
         <div class="ingresoApp">
@@ -40,10 +60,10 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="main">
 
         <!-- Presentacion -->
-        <section>
+        <section class="sectionLutenteCloud">
 
             <!-- Img principal-->
             <div class="contImgPresentacion">
@@ -60,9 +80,8 @@
             <div class="contLutenteCloud">
                 <div class="contLutenteCloudImg">
                     <img class="imgLutenteCloud" src="/img/sectionInicioPrueba.png" id="imgMain1" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquid omnis doloremque, quos
-                        corrupti eaque officia illum aut animi obcaecati dolore laborum eligendi sint sit molestias esse
-                        optio quae! Obcaecati.</p>
+                    <p>Lutente Cloud permite a concesionarias y agencias de vehículos a gestionar todas las áreas de 
+                        la empresa con mayor eficiencia y velocidad.</p>
                     <a href="./pages/formulario.html">
                         <button class="buttonComienzaAhora">¡Solicita DEMO!</button>
                     </a>
@@ -83,7 +102,7 @@
 
             <!-- Contenedor Modulos-->
             <div class="cont_Modulos">
-                <div class="cont_Modulos_Elegir">
+                <div class="cont_Modulos_Elegir" data-aos="fade-right">
                     <!-- Imagen modulos -->
                     <img class="imgModulos" src="/img/Imagen5SinNumPNG.png" alt="">
                     <!-- Botones -->
@@ -95,14 +114,27 @@
                         <button class="cont_Modulos_Boton" id="bton5">5</button>
                     </div>
                 </div>
-                <div id="carpetaCarrusel" class="carrousel">
-                    <div class="img-container" id="img-container">
-                        <img class="imgCarrusel" id="img1" src="./img/2.png" />
-                        <img class="imgCarrusel" id="img2" src="./img/3.png" />
-                        <img class="imgCarrusel" id="img3" src="./img/4.png" />
-                        <img class="imgCarrusel" id="img4" src="./img/5.png" />
-                        <img class="imgCarrusel" id="img5" src="./img/1.png" />
-                    </div>
+                <div class="modulosTextos">
+                        <div class="contenedorModulo" id="modulo1">
+                            <h2 class="tituloContenedorModulo">1.INVENTARIO</h2>
+                            <p class="textoModulo">Inventario de vehículos. Integración con InfoAutos. Fácil ingreso/egreso. Fácil actualizacion de precios.</p> 
+                        </div>
+                        <div class="contenedorModulo" id="modulo2"> 
+                            <h2 class="tituloContenedorModulo">2.VENTAS</h2>
+                            <p class="textoModulo">Cierre e Historial de Ventas. Créditos Prendarios. Clientes.</p> 
+                        </div>
+                        <div class="contenedorModulo" id="modulo3"> 
+                            <h2 class="tituloContenedorModulo">3.ADMINISTRACIÓN</h2>
+                            <p class="textoModulo">Seguimiento Post Venta. Caja. Proveedores. Transacciones/ Movimientos. Asignación de trámites. Gastos.</p> 
+                        </div>
+                        <div class="contenedorModulo" id="modulo4"> 
+                            <h2 class="tituloContenedorModulo">4.GESTORÍA</h2>
+                            <p class="textoModulo">Trámites. Recepción. Preparación. Presentación Administración. Seguimiento. Retiro y cierre.</p> 
+                        </div>
+                        <div class="contenedorModulo" id="modulo5"> 
+                            <h2 class="tituloContenedorModulo">5.ANALÍTICOS</h2>
+                            <p class="textoModulo">Dashboard. Métricas. Proyección de ventas. Toma de desiciones.</p> 
+                        </div>
                 </div>
             </div>
         </section>
@@ -113,7 +145,11 @@
             <div class="contTituloSection">
                 <h2 class="tituloSection">Procesos de ventas</h2>
             </div>
+            <div id="ProcesosEspacio" class="ProcesosEspacio"></div>
             <!-- Procesos de arriba -->
+            <!-- <div class="contPorcesosTotalResponsive">
+                <img src="img/ElementosParaWeb4.jpg" alt="">
+            </div> -->
             <div class="contPorcesosTotal">
                 <div class="contProcesos">
                     <a href="#ProcesosEspacio" class="linkProceso">
@@ -159,7 +195,6 @@
             </div>
 
             <div class="contProcesosText">
-                <div class="espacioParaHref" id="ProcesosEspacio"></div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText1">
                     <img class="imgProcesos" src="img/ventas.png" alt="">
 
@@ -250,13 +285,18 @@
                     <li>✔ Cibtrik de flujo de efectivo, cheques y pagares</li>
                     <li>✔ Mejor experiencia para el cliente</li>
                 </ul>
-                <img src="" alt="" class="imagenBeneficios">
+                <div class="imgsBeneficios">
+                    <img src="img/imgBeneficios.png" alt="">
+                    <!-- <img src="img/beneficio1-removebg-preview.png" alt="" class="imagenBeneficios" id="imgBeneficio1">
+                    <img src="img/beneficio2-removebg-preview.png" alt="" class="imagenBeneficios" id="imgBeneficio2">
+                    <img src="img/beneficio3-removebg-preview.png" alt="" class="imagenBeneficios" id="imgBeneficio3"> -->
+                </div>
             </div>
         </section>
 
         <section class="sectionVideos">
-            <h2>Uso de la aplicacion</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zGAVNckbv28?si=x7zuma3OJ0wgM-RW"
+            <h2>¿Que es LUTENTE?</h2>
+            <iframe id="iframe" src="https://www.youtube.com/embed/zGAVNckbv28?si=x7zuma3OJ0wgM-RW"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -265,8 +305,44 @@
     </main>
 
     <footer class="footerLutente">
-        <div></div>
+        <div class="cont1Footer">
+            
+            <a href="https://lutente.com/DEMO/login.php"><img src="img/ElementosParaWeb2.png" alt=""
+                class="lutenteFooter">
+            </a>
+            <div class="redesFooter">
+                <a href="./pages/formulario.html">
+                    <button class="buttonFooter">CONTACTANOS</button>
+                </a>
+                
+                    <a href="#"><img src="./img/linkedin.png" alt="" class="iconFooter"></a>
+                    <a href="#"><img src="./img/instagram.png" alt="" class="iconFooter"></a>
+                
+                <p>© Lutente 2023</p>
+            </div>
+        </div>
+        <!-- <div class="cont2Footer">
+            <h2>Empresas que confian en nosotros:</h2>
+            <div class="empresasFooter">
+                <a href="#"><img src="./img/manzana.png" alt="" class="empresaFooter"></a>
+                <a href="#"><img src="./img/huawei.png" alt="" class="empresaFooter"></a>
+                <a href="#"><img src="./img/itunes.png" alt="" class="empresaFooter"></a>
+                <a href="#"><img src="./img/manzana.png" alt="" class="empresaFooter"></a>
+                <a href="#"><img src="./img/huawei.png" alt="" class="empresaFooter"></a>
+                <a href="#"><img src="./img/itunes.png" alt="" class="empresaFooter"></a>
+            </div>
+        </div> -->
+
+        <img src="/img/footerImagenPrueba-removebg-preview.png" alt="" class="dispositivosFooter">
+
     </footer>
+
+    <!-- Link AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
