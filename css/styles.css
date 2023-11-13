@@ -559,10 +559,7 @@ body {
 
 .contBeneficios{
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
-=======
->>>>>>> @{u}
 }
 
 .listaBeneficios {
@@ -630,11 +627,7 @@ body {
     align-items: center;
     background-color: rgb(244, 177, 14);
     margin-top: 100px;
-<<<<<<< HEAD
     height: 350px;
-=======
-    height: 300px;
->>>>>>> @{u}
 }
 
 .cont1Footer {
@@ -704,21 +697,11 @@ body {
 
 .redesFooter {
     display: flex;
-<<<<<<< HEAD
     justify-content: flex-start;
 }
 
 .redesFooter a {
     margin-right: 50px;
-=======
-    align-items: center;
-    bottom: 0px;
-    justify-content: space-between;
-}
-
-.redesFooter a {
-    
->>>>>>> @{u}
 }
 
 /*.cont2Footer {
@@ -752,13 +735,8 @@ body {
 
 .dispositivosFooter {
     position: absolute;
-<<<<<<< HEAD
     height: 400px;
     margin-bottom: 75px;
-=======
-    width: 600px;
-    margin-bottom: 100px;
->>>>>>> @{u}
     right: 0px;
 }
 
@@ -1027,7 +1005,6 @@ body {
     .sectionVideos iframe{
         margin: 0px;
     }
-<<<<<<< HEAD
 
     /*Footer*/
     .redesFooter {
@@ -1042,8 +1019,6 @@ body {
         margin-bottom: 125px;
         right: 0px;
     }
-=======
->>>>>>> @{u}
 }
 
 @media (max-width: 945px) {
@@ -1192,7 +1167,6 @@ body {
         width: 400px;
     }
 
-<<<<<<< HEAD
 
     /*Footer*/
     .dispositivosFooter {
@@ -1201,10 +1175,6 @@ body {
         height: 200px;
         margin-bottom: 50px;
         right: 0px;
-=======
-    .footerLutente {
-        display: none;
->>>>>>> @{u}
     }
 }
 
@@ -1354,7 +1324,6 @@ body {
     .sectionVideos {
         margin-top: 100px;
     }
-<<<<<<< HEAD
 
     /*Footer*/
 
@@ -1402,8 +1371,6 @@ body {
     .inputForm {
         width: 100%;
     }
-=======
->>>>>>> @{u}
 }
 
 @media (max-width: 480px) {
@@ -1479,7 +1446,6 @@ body {
         width: 300px;
         height: 200px;
     }
-<<<<<<< HEAD
 
     .contProcesosText {
         margin-top: 25px;
@@ -1490,6 +1456,12 @@ body {
 
 
 @media (max-width: 320px) {
+    /*Nav*/
+    .nav {
+        justify-content: flex-start;
+    }
+
+    /*Procesos*/
     .contProcesosText {
         margin-top: 100px;
     }
@@ -1520,12 +1492,4 @@ body {
     }
 
     
-=======
-}
-
-@media (max-width: 480px) {
-    .contProcesosText {
-        margin-top: 25px;
-    }
->>>>>>> @{u}
 }
