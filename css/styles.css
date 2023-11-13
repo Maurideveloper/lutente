@@ -19,6 +19,7 @@ body {
 }
 
 /*Header*/
+/*267-97*/
 .respmenu{
     display: none;
 }
@@ -96,6 +97,10 @@ body {
 /*Logo Menu*/
 .contLogoLat {
     display: flex;
+}
+
+.contLogoLat img {
+    width: 267px;
 }
   
 
@@ -554,6 +559,7 @@ body {
 
 .contBeneficios{
     display: flex;
+    justify-content: space-between;
 }
 
 .listaBeneficios {
@@ -594,7 +600,7 @@ body {
 
 /*Section Videos*/
 .sectionVideos {
-    margin-top: 350px;
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -609,7 +615,9 @@ body {
 }
 
 .sectionVideos iframe {
-    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+    margin-top: 10px;
     border: 3px solid rgb(244, 177, 14);
 }
 
@@ -619,7 +627,7 @@ body {
     align-items: center;
     background-color: rgb(244, 177, 14);
     margin-top: 100px;
-    height: 300px;
+    height: 350px;
 }
 
 .cont1Footer {
@@ -689,9 +697,11 @@ body {
 
 .redesFooter {
     display: flex;
-    align-items: center;
-    bottom: 0px;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.redesFooter a {
+    margin-right: 50px;
 }
 
 /*.cont2Footer {
@@ -725,8 +735,8 @@ body {
 
 .dispositivosFooter {
     position: absolute;
-    width: 600px;
-    margin-bottom: 100px;
+    height: 400px;
+    margin-bottom: 75px;
     right: 0px;
 }
 
@@ -995,6 +1005,20 @@ body {
     .sectionVideos iframe{
         margin: 0px;
     }
+
+    /*Footer*/
+    .redesFooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dispositivosFooter {
+        display: flex;
+        position: absolute;
+        height: 300px;
+        margin-bottom: 125px;
+        right: 0px;
+    }
 }
 
 @media (max-width: 945px) {
@@ -1143,8 +1167,14 @@ body {
         width: 400px;
     }
 
-    .footerLutente {
-        display: none;
+
+    /*Footer*/
+    .dispositivosFooter {
+        display: flex;
+        position: absolute;
+        height: 200px;
+        margin-bottom: 50px;
+        right: 0px;
     }
 }
 
@@ -1294,6 +1324,53 @@ body {
     .sectionVideos {
         margin-top: 100px;
     }
+
+    /*Footer*/
+
+    .dispositivosFooter {
+        display: none;
+    }
+
+    .cont1Footer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px; 
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .redesFooter{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redesFooter a {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        text-decoration: none;
+    }
+
+    .redesSocialesFooter{
+        display: flex;
+        width: 100%;
+    }
+
+    /*Formulario*/
+    .form {
+        width: 300px;
+    }
+
+    .form ul{
+        padding: 0px;
+    }
+
+    .inputForm {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1369,10 +1446,44 @@ body {
         width: 300px;
         height: 200px;
     }
-}
 
-@media (max-width: 480px) {
     .contProcesosText {
         margin-top: 25px;
     }
+
+    /*Form*/
+}
+
+
+@media (max-width: 320px) {
+    .contProcesosText {
+        margin-top: 100px;
+    }
+
+    .pruebaProcesos{
+        padding: 25px 25px 35px 35px;
+    }
+
+    .pruebaProcesos2{
+        padding: 25px 25px 35px 35px;
+    }
+
+    .contenedorHambur {
+        margin-right: 15px;
+    }
+
+    .navigationResponsive {
+        right: 80px;
+    }
+    
+
+    #hamburResp {
+        width: 50px;
+    }
+
+    #usuarioResp {
+        width: 50px;
+    }
+
+    
 }
