@@ -105,49 +105,10 @@ body {
 }
   
 
-/*Contenedor Titulo Lutene*/
-.sectionLutenteCloud {
-    width: 100%;
-}
-
-.contImgPresentacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 800px;
-
-    .imgMainPresentacion {
-        width: 643px;
-        height: 105px;
-    }
-}
-
-/*Arrow para bajar*/
-.contArrow {
-    display: flex;
-    justify-content: center;
+/*Arrow espacio*/
+.spaceHead {
     width: 100%;
     height: 100px;
-}
-
-.arrow {
-    height: 0px;
-    border: solid rgb(244, 177, 14);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 25px;
-    cursor: pointer;
-  }
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-
-.arrow:hover {
-    margin-top: 10px;
-    transition: all 0.4s;
 }
 
 /*Primer imagen de main*/
@@ -165,11 +126,24 @@ body {
 .contLutenteCloudImg p{
     margin-left: 13%;
     font-size: x-large;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     width: 80%;
 }
 
+.contButtonLutenteCloud {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.contButtonLutenteCloud button a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .buttonComienzaAhora{
-    width: 450px;
+    width: 300px;
     height: 50px;
     background-color: black;
     color: white;
@@ -178,13 +152,12 @@ body {
     border-radius: 20px;
     border: 0px;
     margin-top: 30px;
-    margin-left: 13%;
     margin-bottom: 50px;
     cursor: pointer;
-    font-size: x-large;
+    font-size: large;
 }
 
-.buttonComienzaAhora:hover{
+.buttonComienzaAhora a:hover{
    color: rgba(244, 179, 14);
 }
 
@@ -243,8 +216,6 @@ body {
     background-color: black;
     cursor: pointer;
     font-size: large;
-    /* box-shadow: 0px 0px 31px 8px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6); Fijate que le saque el shadow a los botones*/
 }
 
 #bton1 {
@@ -337,18 +308,7 @@ body {
     height: 0px;
     position: absolute;
 }
-/*
-.contPorcesosTotalResponsive{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-
-.contPorcesosTotalResponsive img{
-    width: 80%;
-}
-*/
 .contPorcesosTotal {
     width: 1200px;
     display: flex;
@@ -632,7 +592,7 @@ body {
     align-items: center;
     background-color: rgb(244, 177, 14);
     margin-top: 100px;
-    height: 350px;
+    height: 400px;
 }
 
 .cont1Footer {
@@ -673,7 +633,7 @@ body {
 }
 
 .buttonFooter {
-    width: 250px;
+    width: 300px;
     height: 50px;
     background-color: black;
     color: white;
@@ -712,7 +672,6 @@ body {
 .dispositivosFooter {
     position: absolute;
     height: 400px;
-    margin-bottom: 75px;
     right: 0px;
 }
 
@@ -829,6 +788,12 @@ body {
 
     .ingresoApp a {
         font-size: medium;
+    }
+
+    /*Arrow espacio*/
+    .spaceHead {
+        width: 100%;
+        height: 50px;
     }
 
     /*Modulos + carrousel*/
@@ -993,7 +958,6 @@ body {
         display: flex;
         position: absolute;
         height: 300px;
-        margin-bottom: 125px;
         right: 0px;
     }
 }
@@ -1001,6 +965,12 @@ body {
 @media (max-width: 945px) {
     .data-aos {
         display: none;
+    }
+
+    /*Arrow espacio*/
+    .spaceHead {
+        width: 100%;
+        height: 60px;
     }
     /*Header responsive*/
     .navigation {
@@ -1059,8 +1029,15 @@ body {
 
     /*Section Lutente Cloud*/
 
+    .contButtonLutenteCloud{
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+
     .buttonComienzaAhora{
-        width: 350px;
+        width: 300px;
         height: 50px;
         background-color: black;
         color: white;
@@ -1068,9 +1045,9 @@ body {
         font-weight: bold;
         border-radius: 20px;
         border: 0px;
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: 13%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         cursor: pointer;
         font-size: large;
     }
@@ -1145,6 +1122,12 @@ body {
         width: 100%;
     }
 
+    /*beneficios*/
+
+    .imgsBeneficios {
+        width: 600px;
+    }
+
     /*Video*/
     .sectionVideos iframe {
         width: 400px;
@@ -1156,7 +1139,6 @@ body {
         display: flex;
         position: absolute;
         height: 200px;
-        margin-bottom: 50px;
         right: 0px;
     }
 }
@@ -1325,6 +1307,10 @@ body {
         justify-content: center;
     }
 
+    .redesFooter a {
+        margin-right: 0px;
+    }
+
     .redesFooter{
         justify-content: center;
         align-items: center;
@@ -1333,7 +1319,7 @@ body {
     .redesFooter a {
         display: flex;
         width: 100%;
-        justify-content: flex-end;
+        justify-content: center;
         text-decoration: none;
     }
 
