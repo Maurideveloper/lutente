@@ -311,68 +311,64 @@ body {
 
 .contPorcesosTotal {
     width: 1200px;
+    height: 235px; /*para que quede acomodado con los procesos*/
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url('../img/elementosParaWeb42.png');
     background-size: 100%;
-    
+    position: absolute;
+    margin-top: 230px;
+    z-index: 901;
 }
 
 .pruebaProcesos{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 68px;
+    margin-right: 68px;
     rotate: 90;
     margin-top: 75px;
     background-color: black;
     padding: 80px;
     transform: rotate(315deg);
     border-radius: 25px 100px 25px 25px; 
-    z-index: 999;
     cursor: pointer;
+    z-index: 901;
 }
 
 .pruebaProcesos2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin-left: 68px;
+    margin-right: 68px;
     rotate: 90;
-    margin-top: 55px;
+    margin-top: 75px;
     background-color: black;
     padding: 80px;
     transform: rotate(135deg);
-    border-radius: 25px 100px 25px 25px;
+    border-radius: 25px 100px 25px 25px; 
     cursor: pointer;
-}
-
-.linkProceso {
-    display: flex;
-    margin-left: 68px;
-    margin-right: 68px;
-    border-radius: 25px 100px 25px 25px;
-}
-
-.linkProceso2 {
-    display: flex;
-    margin-left: 68px;
-    margin-right: 68px;
-    border-radius: 25px 100px 25px 25px;
+    z-index: 901;
 }
 
 .contProcesos {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    z-index: 901;
 }
 
 .contProcesos2 {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 350px;
     position: absolute;
-    margin-top: 150px;
-    right: 15px;
+    z-index: 900;
 }
 
 .pPrueba{
@@ -835,23 +831,17 @@ body {
         margin-top: 50px;
         background-color: black;
         padding: 56px;
+         margin-left: 47.6px;
+        margin-right: 47.6px;
     }
     
     .pruebaProcesos2{
         padding: 56px;
-        margin-top: 0px;
+        margin-top: 15px;
+        margin-left: 47.6px;
+        margin-right: 47.6px;
     }
 
-    .linkProceso {
-        margin-left: 47.6px;
-        margin-right: 47.6px;
-    }
-    
-    .linkProceso2 {
-        margin-left: 47.6px;
-        margin-right: 47.6px;
-    }
-    
     .pPrueba{
         color: rgb(244, 177, 14);
         font-family: 'Raleway', sans-serif;
@@ -1089,6 +1079,8 @@ body {
         margin-top: 50px;
         background-color: black;
         padding: 56px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .contProcesos {
@@ -1103,14 +1095,6 @@ body {
     .pruebaProcesos2{
         padding: 56px;
         margin-top: 0px;
-    }
-
-    .linkProceso {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    
-    .linkProceso2 {
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -1236,19 +1220,13 @@ body {
     .contProcesos2 {
         position: static;
         margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
     .pruebaProcesos2{
         padding: 30px 30px 40px 40px;
         margin-top: 0px;
-    }
-
-    .linkProceso {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    .linkProceso2 {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -1407,20 +1385,15 @@ body {
         flex-direction: column-reverse;
     }
 
-    .sectionVideos h2{
-        font-size: x-large;
+    .pruebaProcesos{
+        padding: 25px 25px 35px 35px;
     }
 
-    .sectionVideos iframe {
-        width: 300px;
-        height: 200px;
+    .pruebaProcesos2{
+        padding: 25px 25px 35px 35px;
     }
 
-    .contProcesosText {
-        margin-top: 25px;
-    }
-
-    /*Form*/
+   
 }
 
 
@@ -1430,18 +1403,29 @@ body {
         justify-content: flex-start;
     }
 
-    /*Procesos*/
+
+    .pruebaProcesos{
+        padding: 20px 20px 30px 30px;
+    }
+
+    .pruebaProcesos2{
+        padding: 20px 20px 30px 30px;
+    }
+
+    .pPrueba {
+        font-size: 9px;
+    }
+
+    .pPrueba2 {
+        font-size: 9px;
+    }
+
     .contProcesosText {
         margin-top: 100px;
     }
 
-    .pruebaProcesos{
-        padding: 25px 25px 35px 35px;
-    }
 
-    .pruebaProcesos2{
-        padding: 25px 25px 35px 35px;
-    }
+    
 
     .contenedorHambur {
         margin-right: 15px;
@@ -1453,11 +1437,11 @@ body {
     
 
     #hamburResp {
-        width: 50px;
+        width: 40px;
     }
 
     #usuarioResp {
-        width: 50px;
+        width: 40px;
     }
 
     
