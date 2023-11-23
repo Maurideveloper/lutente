@@ -820,6 +820,10 @@ body {
         
     }
 
+    .contProcesos2 {
+        z-index: 999;
+    }
+
     #ProcesosEspacio {
         margin-top: 200px;
         height: 0px;
@@ -949,6 +953,16 @@ body {
         position: absolute;
         height: 300px;
         right: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contProcesosText {
+        margin-top: 100px;
+    }
+
+    .pruebaProcesos2 {
+        margin-top: 70px;
     }
 }
 
@@ -1094,12 +1108,15 @@ body {
     
     .pruebaProcesos2{
         padding: 56px;
-        margin-top: 0px;
+        margin-top: 50px;
         margin-left: 15px;
         margin-right: 15px;
     }
 
     /*Procesos text*/
+    .contProcesosText{
+        margin-top: 0px;
+    }
 
     .ProcesosText {
         margin-top: 0px;
@@ -1219,9 +1236,9 @@ body {
 
     .contProcesos2 {
         position: static;
-        margin-top: 0px;
         margin-left: 10px;
         margin-right: 10px;
+        z-index: 999;
     }
     
     .pruebaProcesos2{
